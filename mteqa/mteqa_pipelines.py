@@ -20,7 +20,7 @@ class MTEQGPipeline(QGPipeline):
 
     def __call__(self, inputs: str, _self_answers=None):
         if _self_answers is None:
-            super().__call__(inputs)
+            return super().__call__(inputs)
         else:
             inputs = " ".join(inputs.split())
             sents, _ = self._extract_answers(inputs)
