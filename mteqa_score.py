@@ -32,8 +32,6 @@ if __name__ == '__main__':
     mteqa = mteqa_pipeline(model="./models/qa_qg/t5-base-qa-qg-hl",
                            use_cuda=torch.cuda.is_available() and not args.cpu)
 
-    # Make sure that the Stanza and UDPipe models are downloaded
-
     qa_pairs = []
 
     # Generating Question-Answer pairs from reference

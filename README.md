@@ -34,6 +34,8 @@ pip install -r requirements.txt
 ./mteqa/download_models.py
 ```
 
+**Code was tested with python 3.8.**
+
 ## Scoring
 
 To score the MT output, run
