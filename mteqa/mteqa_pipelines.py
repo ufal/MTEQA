@@ -1,6 +1,7 @@
 import itertools
 from typing import Optional, Dict, Union
 import sys
+import os
 
 from transformers import (
     AutoModelForSeq2SeqLM,
@@ -8,9 +9,9 @@ from transformers import (
 )
 
 # Add the question_generation package
-sys.path.append("./question_generation")
+sys.path.append(os.path.join(os.path.dirname(__file__), "../question_generation"))
 from pipelines import QGPipeline, MultiTaskQAQGPipeline
-from utils import split_list
+from mteqa.utils import split_list
 
 
 class MTEQGPipeline(QGPipeline):

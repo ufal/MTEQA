@@ -4,9 +4,9 @@ import argparse
 
 import torch
 
-from answer_extraction import extract_answers
-from mteqa_pipelines import mteqa_pipeline
-from utils import compare_answers
+from mteqa.answer_extraction import extract_answers
+from mteqa.mteqa_pipelines import mteqa_pipeline
+from mteqa.utils import compare_answers
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Question based MT evaluation')

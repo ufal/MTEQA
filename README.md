@@ -4,7 +4,7 @@ This repository is the official implementation
 of [Just Ask! Evaluating Machine Translation by Asking and Answering Questions](http://www.statmt.org/wmt21/pdf/2021.wmt-1.58.pdf)
 .
 
-> ![MTEQA-basic](./MTEQA-basic.png?raw=true "Title")
+> ![MTEQA-basic](./resources/MTEQA-basic.png?raw=true "Title")
 
 ## Requirements
 
@@ -31,7 +31,7 @@ and then install required dependencies and download required models with:
 
 ```setup
 pip install -r requirements.txt
-./download_models.py
+./mteqa/download_models.py
 ```
 
 ## Scoring
