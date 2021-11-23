@@ -1,8 +1,7 @@
 # MTEQA
 
 This repository is the official implementation
-of [Just Ask! Evaluating Machine Translation by Asking and Answering Questions](http://www.statmt.org/wmt21/pdf/2021.wmt-1.58.pdf)
-.
+of [Just Ask! Evaluating Machine Translation by Asking and Answering Questions](http://www.statmt.org/wmt21/pdf/2021.wmt-1.58.pdf).
 
 > ![MTEQA-basic](./resources/MTEQA-basic.png?raw=true "Title")
 
@@ -58,7 +57,7 @@ Additional flags are:
   pattern matching/NER is used.
 * `--gen_from_out`: Extract Question/Answer pairs from both the reference and the MT output,
   see [Section 3.3 - 1)](http://www.statmt.org/wmt21/pdf/2021.wmt-1.58.pdf).
-* `---verbose`: Outputs per-segment score. By default, only the single system-level score is reported.
+* `--verbose`: Outputs per-segment score. By default, only the single system-level score is reported.
 
 Output is tab delimited, with a single column for each string-comparison metric that we used.
 

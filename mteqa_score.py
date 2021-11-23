@@ -43,7 +43,6 @@ if __name__ == '__main__':
                 qa_pairs.append(_qa_pairs)
             except (ValueError, AssertionError):
                 qa_pairs.append([])
-
         else:
             try:
                 _qa_pairs = mteqa(_ref)

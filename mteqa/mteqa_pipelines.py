@@ -90,5 +90,8 @@ def mteqa_pipeline(
     return MTEQAMultiTaskQAQGPipeline(
         model=model,
         tokenizer=tokenizer,
-        ans_model=model, ans_tokenizer=tokenizer,
-        qg_format="highlight", use_cuda=use_cuda)
+        ans_model=model,
+        ans_tokenizer=tokenizer,
+        qg_format="highlight",
+        use_cuda=use_cuda
+    )
